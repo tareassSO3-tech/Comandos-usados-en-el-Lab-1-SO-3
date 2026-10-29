@@ -42,3 +42,26 @@ sudo nmcli connection up (nombre de la conexion)
 sudo nmcli connection down (nombre de la conexion)
 sudo nmcli connection delete (nombre de la conexion)
 ========================================
+Practica 3
+Gestion de Usuarios Y grupos
+
+Gestion de usuarios 
+
+sudo adduser  nombre-usuario
+sudo usermod -aG nombre-grupo nombre-usuario
+sudo deluser -r nombre-usuario
+
+Gestion de grupos
+
+sudo groupadd nombre-grupo
+sudo groupdel nombre-grupo
+
+Visualizar los Usuarios
+
+cat /etc/passwd
+cat /etc/passwd | grep nombre-usuario
+
+Visualizar los Grupos
+
+cat /etc/group
+cat /etc/group | grep nombre-grupo
