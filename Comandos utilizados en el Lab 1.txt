@@ -65,3 +65,28 @@ Visualizar los Grupos
 
 cat /etc/group
 cat /etc/group | grep nombre-grupo
+============================================
+Practica 4
+Gestion de Permisos de Archivos
+
+Para crear un directorio
+
+mkdir nombre-carpeta
+
+Para eliminar un directorio de manera recursiva
+
+rm -rf nombre-carpeta
+
+Para crear un archivo .txt y editarlo con vi
+
+vi nombre-archvio.txt
+
+Para copiar un archivo
+
+cp nombre-archivo destino
+
+Para modificar los permisos de un archivo
+
+chmod xxx nombre-archivo ; 1era x: usuario propietario ; 2da x: grupo propietario ; 3era x: otros
+
+valores: r:4 ; w:2 ; x:1
