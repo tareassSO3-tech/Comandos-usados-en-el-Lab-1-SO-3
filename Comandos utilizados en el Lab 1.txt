@@ -5,4 +5,40 @@ Practica 1
 
 No se utilizaron comandos
 
-=======================================
+======================================
+Practica 2 
+Configuración de parametros de red
+
+Comandos ip (temporales)
+
+sudo ip addr add (ingresa la dirección ip / el prefijo) dev (el nombre de la interfaz)
+sudo ip route add default via (ingresa el default gateway) dev (el nombre de la interfaz)
+sudo resolvectl dns (nombre de la interfaz) (las direcciones dns que desee)
+sudo ip link set dev (el nombre de la interfaz) set up
+sudo ip link set dev (el nombre de la interfaz) set down
+
+Comando nmtui
+
+sudo nmtui
+Luego lo de mas sea hace desde su interfaz.
+
+Comandos nmcli
+nmcli connection add type ethernet
+ifnme (nombre de la interfaz) \
+con-name (nombre de la conexion) \
+ipv4.address (la direccion ip / el prefijo) \
+ipv4.gateway (el default gateway) \
+ipv4.dns (la direccion dns) \
+ipv4.method manual \
+autoconnect yes
+
+DHCP
+con-name (nombre de la conexion)
+ifnme (nombre de la interfaz) \
+ipv4.method auto \
+autoconnect yes
+
+sudo nmcli connection up (nombre de la conexion)
+sudo nmcli connection down (nombre de la conexion)
+sudo nmcli connection delete (nombre de la conexion)
+========================================
